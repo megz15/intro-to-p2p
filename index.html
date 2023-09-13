@@ -46,6 +46,7 @@
 					</p>
 					<p>
 						In contrast, P2P eliminates the need for a central server and relies on direct peer connections.
+						Results in increased scalability, fault tolerance and performance.
 					</p>
 				</section>
 
@@ -98,6 +99,19 @@
 					<p>
 						Peer exchange is a protocol that allows peers to exchange peer lists with each other.
 						Enables clients to expand their peer list obtained from a tracker or DHT by exchanging peers with other clients.
+					</p>
+				</section>
+
+				<section>
+					<h3>Resource Sharing and Seeding</h3>
+					<p>
+						Peers can share resources in the form of files, data or processing power.
+						Data is shared in the form of small chunks.
+						Each chunk is identified and verified by a cryptographic hash. This is to ensure data integrity.
+						When a peer wants to download a file, it queries the network for peers that have the file.
+						If the piece is found to be corrupted, the peer can request the piece from another peer.
+						Once a peer has the file, it can continue sharing the file with other peers in the network.
+						This is good moral practice and is central to P2P networks. It's called seeding.
 					</p>
 				</section>
 			</div>
