@@ -52,7 +52,52 @@
 				<section>
 					<h3>How does it work?</h3>
 					<p>
-						
+						When a system joins a P2P network, it needs to discover other peers in the network.
+						Some common methods of peer discovery are: <br>
+						<ul>
+							<li>Centralized Trackers</li>
+							<li>Decentralized hash Tables (DHTs)</li>
+							<li>Peer exchange (PeX)</li>
+							<li>Seed Nodes</li>
+							<li>Broadcast / Multicast</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h3>Centralized Servers/Trackers</h3>
+					<p>
+						Trackers are servers that keeps track of peers in the network. <br>
+						<!-- When a peer joins the network, it registers itself with the tracker. <br>
+						When a peer wants to find other peers, it asks the tracker for a list of peers. <br>
+						When a peer wants to share a file, it registers the file with the tracker. <br>
+						When a peer wants to download a file, it asks the tracker for a list of peers that have the file. <br> -->
+					</p>
+				</section>
+
+				<section>
+					<h3>DHT's</h3>
+					<p>
+						Decentralized data structures that store information about peers in the network.
+						<br> A peer can query the DHT to find other peers and associated resources in the network.
+						<br> Can efficiently handle large scale P2P networks.
+					</p>
+				</section>
+
+				<section>
+					<h3>Bootstrap Nodes</h3>
+					<p>
+						Used in blockchain based networks (BTC, ETH).
+						<br> Predefined seed nodes that are known to be online and are used by new peers to join the network.
+						<br> A peer can query the bootstrap node to find other peers in the network.
+					</p>
+				</section>
+				
+				<section>
+					<h3>PeX</h3>
+					<p>
+						Peer exchange is a protocol that allows peers to exchange peer lists with each other.
+						Enables clients to expand their peer list obtained from a tracker or DHT by exchanging peers with other clients.
 					</p>
 				</section>
 			</div>
