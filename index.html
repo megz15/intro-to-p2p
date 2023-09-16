@@ -17,102 +17,228 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h4 class="glow">An Introduction to</h4>
-					<object data="./assets/sharing.svg" width="20%"></object>
-					<h4 class="glow">Peer To Peer Networking</h4><br>
-					<small><h6>Created by <a target="_blank" href="https://github.com/megz15">Meghraj Goswami</a><h6></small>
+					<h3>An Introduction to</h3>
+					<object data="./assets/sharing.svg" width="30%"></object>
+					<h3>Peer-To-Peer Networking</h3><br>
+					<h5>by <a target="_blank" href="https://github.com/megz15">Meghraj Goswami</a><h5>
+				</section>
+
+				<section>
+					<h4>Scan to access slides</h4>
+					<img src="assets/qrchimpX1024.png" width="500px" />
 				</section>
 				
 				<section>
 					<h3>What is P2P?</h3>
 					<p>
-						Peer to Peer networking, or P2P, is a decentralized network architecture where each peer, or node,
-						has equal privilege, and can provide and consume resources to and from other peers in the network.
+						Peer to Peer networking is a decentralized network architecture where each peer can provide and consume resources to and from other peers in the network, without the need for a central server.
 					</p>
 				</section>
 
 				<section>
-					<h3>What is a peer?</h3>
+					<h4>Peer? Why I hardly know 'er!</h4>
 					<p>
-						Peers are the participants of the network. Each peer serves as both a client and a server,
-						and can share data and resources with other peers in the network.
+						Peers are the members of the network, they serve as both a client and a server, and can share data and resources with other peers in the network.
 					</p>
+					<img src="assets/pear.jpg" width="50%" />
 				</section>
 
 				<section>
-					<h3>Diff from traditional network arch</h3>
-					<p>
-						In a Client-Server model, data and resources are stored on a central server which is accessed by clients.
-					</p>
-					<p>
-						In contrast, P2P eliminates the need for a central server and relies on direct peer connections.
-						Results in increased scalability, fault tolerance and performance.
-					</p>
-				</section>
+					<section>
+						<h4>Difference from traditional network architectures</h4>
+						<p>
+							In a Client-Server model, data and resources are stored on a central server which is accessed by clients.
+						</p>
+						<p>
+							P2P eliminates the need for a central server and relies on direct peer connections.
+						</p>
+					</section>
 
-				<section>
-					<h3>How does it work?</h3>
-					<p>
-						When a system joins a P2P network, it needs to discover other peers in the network.
-						Some common methods of peer discovery are: <br>
+					<section>
+						<div style="display:flex;align-items:center;justify-content:center;gap:50px;">
+							<h3>Pros</h3><img src="assets/pro.png" width="10%" />
+						</div>
 						<ul>
-							<li>Centralized Trackers</li>
-							<li>Decentralized hash Tables (DHTs)</li>
-							<li>Peer exchange (PeX)</li>
-							<li>Seed Nodes</li>
-							<li>Broadcast / Multicast</li>
+							<li><b>Decentralized:</b> No single point of failure</li>
+							<li><b>Scalable:</b> New peers add to data or resource pool</li>
+							<li><b>Fault Tolerant</b>: Redundancy via multiple peers</li>
+							<li><b>High Performance:</b> Reduced congestion and load</li>
+							<li><b>Low Cost:</b> Expensive server infra not needed</li>
+							<li><b>Privacy:</b> Traffic routed through multiple nodes</li>
+							<li><b>Community:</b> Foster collaboration and engagement</li>
 						</ul>
-					</p>
+					</section>
+
+					<section>
+						<div style="display:flex;align-items:center;justify-content:center;gap:50px;">
+							<h3>Cons</h3><img src="assets/cons.png" width="10%" />
+						</div>
+						<ul>
+							<li><b>Security:</b> Malicious peers, botnets, limited control</li>
+							<li><b>Legality:</b> Illegal sharing of copyrighted materials</li>
+							<li><b>Latency:</b> Peers/routing can be slow</li>
+							<li><b>General QoS:</b> File availability, bandwidth</li>
+							<li><b>Complexity:</b> Harder to setup and maintain</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
-					<h3>Centralized Servers/Trackers</h3>
-					<p>
-						Trackers are servers that keeps track of peers in the network. <br>
-						<!-- When a peer joins the network, it registers itself with the tracker. <br>
-						When a peer wants to find other peers, it asks the tracker for a list of peers. <br>
-						When a peer wants to share a file, it registers the file with the tracker. <br>
-						When a peer wants to download a file, it asks the tracker for a list of peers that have the file. <br> -->
-					</p>
+					<section>
+						<h3>How does it work?</h3>
+						<p>
+							When a system joins a P2P network, it needs to discover other peers in the network.<br>
+							Some common methods of peer discovery are: <br>
+							<ul>
+								<li>Centralized Trackers</li>
+								<li>Decentralized hash Tables (DHTs)</li>
+								<li>Peer exchange (PeX)</li>
+								<li>Seed Nodes</li>
+								<li>Broadcast / Multicast</li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h3>Centralized Servers/Trackers</h3>
+						<p>
+							Trackers are servers that keeps track of peers in the network. <br>
+							<!-- When a peer joins the network, it registers itself with the tracker. <br>
+							When a peer wants to find other peers, it asks the tracker for a list of peers. <br>
+							When a peer wants to share a file, it registers the file with the tracker. <br>
+							When a peer wants to download a file, it asks the tracker for a list of peers that have the file. <br> -->
+						</p>
+					</section>
+
+					<section>
+						<h3>DHT's</h3>
+						<p>
+							Decentralized data structures that store information about peers in the network.
+						</p><p>
+							A peer can query the DHT to find other peers and associated resources in the network.
+						</p><p>
+							Can efficiently handle large scale P2P networks.
+						</p>
+					</section>
+
+					<section>
+						<h3>Bootstrap Nodes</h3>
+						<p>
+							Used in blockchain based networks (BTC, ETH).
+						</p><p>
+							Predefined seed nodes that are known to be online and are used by new peers to join the network.
+						</p><p>
+							A peer can query the bootstrap node to find other peers in the network.
+						</p>
+					</section>
+					
+					<section>
+						<h3>PeX</h3>
+						<p>
+							Peer exchange allows peers to exchange peer lists with each other.
+						</p><p>
+							Enables clients to expand their peer list obtained from a tracker or DHT by exchanging peers with other clients.
+						</p>
+					</section>
 				</section>
 
 				<section>
-					<h3>DHT's</h3>
-					<p>
-						Decentralized data structures that store information about peers in the network.
-						<br> A peer can query the DHT to find other peers and associated resources in the network.
-						<br> Can efficiently handle large scale P2P networks.
-					</p>
-				</section>
+					<section>
+						<h3>Resource Sharing</h3>
+						<p>
+							Peers can share resources in the form of file chunks, data or processing power.
+						</p><p>
+							Each chunk is identified and verified by a cryptographic hash to ensure data integrity.
+						<!-- </p><p>
+							When a peer wants to download a file, it queries the network for peers that have the file. -->
+							<!-- If the piece is found to be corrupted, the peer can request the piece from another peer. -->
+						</p>
+					</section>
 
-				<section>
-					<h3>Bootstrap Nodes</h3>
-					<p>
-						Used in blockchain based networks (BTC, ETH).
-						<br> Predefined seed nodes that are known to be online and are used by new peers to join the network.
-						<br> A peer can query the bootstrap node to find other peers in the network.
-					</p>
+					<section>
+						<h3>Seeding</h3>
+						<p>
+							Once a peer has the file, it can continue to share (seed) the file with other peers in the network.
+							This is good moral practice and is central to P2P networks.
+						</p>
+						<div style="display:flex;gap:10px;justify-content:center;">
+							<img src="assets/seed1.png" width="35%" />
+							<img src="assets/seed2.png" width="35%" />
+						</div>
+					</section>
 				</section>
 				
 				<section>
-					<h3>PeX</h3>
-					<p>
-						Peer exchange is a protocol that allows peers to exchange peer lists with each other.
-						Enables clients to expand their peer list obtained from a tracker or DHT by exchanging peers with other clients.
-					</p>
+					<section>
+						<h3>P2P based technologies</h3>
+						<ul>
+							<li>Direct Connect (DC++)</li>
+							<li>Napster, Soulseek</li>
+							<li>Torrents</li>
+							<li>IPFS</li>
+							<li>Briar / Jami</li>
+							<li>Perfect Dark</li>
+							<li>I2P</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Direct Connect</h3>
+						<img src="assets/logos/dc.png" />
+						<p>DC is a file sharing protocol. Clients connect to a servers called "hubs" using software like EiskaltDC++ and are able to search for and directly download files from other clients.</p>
+					</section>
+
+					<section>
+						<h3>Napster</h3>
+						<img src="assets/logos/napster.png" />
+						<p>Napster was a P2P application used for sharing sharing digital music.</p>
+						<p>Lawsuits were filed against it regarding copyright infringement.</p>
+					</section>
+
+					<section>
+						<h3>IPFS</h3>
+						<img src="assets/logos/ipfs.png" />
+						<p>Inter-Planatary File System is a P2P network for storing and sharing data.</p>
+						<p>IPFS uses content-addressing, ie, storing and fetching data based on the fingerprint of the actual content rather than name or location.</p>
+					</section>
+
+					<section>
+						<h3>Torrent Protocol</h3>
+						<img src="assets/logos/qb.png" width="100px"/>
+						<p>BitTorrent protocol is used for distributing data over the internet using torrent clients.</p>
+						<p>Seeders are clients who have downloaded chunks and are actively sharing files for other clients, the peers, to download.</p>
+					</section>
+
+					<section>
+						<h3>Briar</h3>
+						<img src="assets/logos/briar.png" width="100px"/>
+						<p>Encrypted messaging service built on P2P, ie, it doesn't have a server for storing messages.</p>
+						<p>Apart from Internet (Tor network) it can use BT, WiFI, physical memory to transfer messages.</p>
+					</section>
+
+					<section>
+						<h3>Perfect Dark</h3>
+						<img src="assets/logos/perfectdark.png"/>
+						<p>Japanese P2P anonymous file-sharing application based on the DKT+DHT+DU protocol.</p>
+						<p>It utilizes a proprietary distributed data store network called Unity.</p>
+					</section>
+
+					<section>
+						<h3>Invisible Internet Project (I2P)</h3>
+						<img src="assets/logos/i2p.png"/>
+						<p>Privacy focused anonymous overlay network for secure, private communication without censorship.</p>
+						<p>Created as an alternative to traditional, open Internet.</p>
+					</section>
 				</section>
 
 				<section>
-					<h3>Resource Sharing and Seeding</h3>
-					<p>
-						Peers can share resources in the form of files, data or processing power.
-						Data is shared in the form of small chunks.
-						Each chunk is identified and verified by a cryptographic hash. This is to ensure data integrity.
-						When a peer wants to download a file, it queries the network for peers that have the file.
-						If the piece is found to be corrupted, the peer can request the piece from another peer.
-						Once a peer has the file, it can continue sharing the file with other peers in the network.
-						This is good moral practice and is central to P2P networks. It's called seeding.
-					</p>
+					<h2>Demonstration</h2>
+					<img src="assets/demo.jpg" width="60%" />
+				</section>
+
+				<section>
+					<h2>Fin</h2>
+					<img src="assets/fin.jpg" width="60%" />
 				</section>
 			</div>
 		</div>
